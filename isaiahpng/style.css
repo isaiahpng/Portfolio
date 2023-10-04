@@ -1,0 +1,410 @@
+@font-face {
+    font-family: myFont;
+    src: url(Monospace\ 821\ Regular.otf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(27, 27, 27);
+}
+
+/* navbar */
+.navbar{
+    padding-left: 550px;
+    padding-top: 20px;
+    background-color: rgb(27, 27, 27);
+    position: static;
+    top: 0;
+}
+.navbar ul{
+    position: static;
+    display: flex;
+    list-style: none;
+    margin: 0px 0px;
+}
+.navbar ul li{
+    font-family: myFont;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    transition: all.5s ease;
+}
+.navbar ul li:nth-child(1) a { 
+    color:rgb(193, 41, 46); 
+}
+.navbar ul li:nth-child(2) a { 
+    color:rgb(255, 236, 151); 
+}
+.navbar ul li:nth-child(3) a { 
+    color:rgb(45, 147, 108); 
+}
+.navbar ul li:nth-child(4) a { 
+    color:rgb(55, 119, 255); 
+}
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* home section */
+#home{
+    background-color: rgb(27, 27, 27);
+    text-align: right;
+    width: 50%; 
+    height: 840px;
+}
+#homeOne{
+    padding-top: 75px;
+    padding-right: 25px;
+    background-color: rgb(27, 27, 27);
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+    height: 750px;
+}
+#texts{
+    background-color: rgb(27, 27, 27);
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 120px;
+    margin: 0px 0px;
+    color: rgb(255, 255, 255);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}
+.headings{
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0px 0px;
+    color: rgb(193, 41, 46);
+}
+.subheadings{
+    font-family: myFont;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px 0px;
+    color: rgb(255, 236, 151);
+}
+
+/* portfolio service */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 10px;
+    padding-top: 10px;    
+}
+.gallery img{
+    margin-bottom: 40px;
+}
+.headings{
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: left;
+    margin: 0px 0px;
+    color: rgba(255, 255, 255, 0.596);
+}
+.container {
+    position: relative;
+    height: "250";
+    width: "250";
+} 
+.image {
+    display: block;
+    height: "250";
+    width: "250";
+} 
+.rOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: "250";
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgb(185, 40, 40);
+}
+.container:hover .rOverlay {
+    height: 87%;
+}
+.yOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: "250";
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgb(233, 216, 139);
+}
+.container:hover .yOverlay {
+    height: 87%;
+}
+.gOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: "250";
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: rgb(45, 147, 108);
+}
+      
+.container:hover .gOverlay {
+        height: 87%;
+}
+.bOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: "250";
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: rgb(55, 119, 255);
+}     
+.container:hover .bOverlay {
+        height: 87%;
+}
+.text {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 85px;
+    text-align: left;
+}
+  .subText {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 75px;
+    text-align: left;
+}
+
+/* About section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.idImage {
+    display: block;
+    height: "100";
+    width: "100";
+    margin-left: 250px;
+} 
+.bioContainer {
+    position: static;
+    height: "100";
+    width: "100";
+}
+.aText {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+    position: static;
+    top: 50%;
+    left: 50%;
+    padding-left: 425px;
+    text-align: left;
+}
+
+/* fine art */
+#fineart{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 10px;
+    padding-top: 10px;    
+}
+.gallery img{
+    margin-bottom: 40px;
+}
+.headings{
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: left;
+    margin: 0px 0px;
+    color: rgba(255, 255, 255, 0.596);
+}
+.fcontainer {
+    position: relative;
+    height: "250";
+    width: "250";
+} 
+.image {
+    display: block;
+    height: "250";
+    width: "250";
+} 
+.rOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: "250";
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgb(185, 40, 40);
+}
+.fcontainer:hover .rOverlay {
+    height: 87%;
+}
+.yOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: "250";
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgb(233, 216, 139);
+}
+.fcontainer:hover .yOverlay {
+    height: 87%;
+}
+.gOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: "250";
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: rgb(45, 147, 108);
+}
+      
+.fcontainer:hover .gOverlay {
+        height: 87%;
+}
+.bOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: "250";
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: rgb(55, 119, 255);
+}     
+.fcontainer:hover .bOverlay {
+        height: 87%;
+}
+.text {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 85px;
+    text-align: left;
+}
+  .subText {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 75px;
+    text-align: left;
+}
+.copy {
+    font-family: myFont;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 4500px;
+    text-align: center;
+}
